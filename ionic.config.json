@@ -1,0 +1,7 @@
+{
+  "name": "CheffcitoGPT",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
