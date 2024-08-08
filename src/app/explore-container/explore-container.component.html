@@ -1,4 +1,8 @@
 <div id="container">
-  <strong>{{ name }}</strong>
-  <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div>
+    <input type="file" (change)="onFileChange($event)">
+  </div>
+  <div *ngFor="let na of name?.list">
+    <div>{{na.food}}</div>
+  </div>
 </div>
