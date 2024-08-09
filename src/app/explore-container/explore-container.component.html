@@ -1,6 +1,9 @@
 <div id="container">
   <div>
+    <!--Image base64-->
+    <img [src]="imageSrc" *ngIf="imageSrc" />
     <input type="file" (change)="onFileChange($event)">
+    <input type="button" value="Generar Imagen" (click)="onClickGenerateImage()">
   </div>
   <div *ngFor="let na of name?.list">
     <div>{{na.food}}</div>
